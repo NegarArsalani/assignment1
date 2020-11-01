@@ -2,7 +2,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 20% 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
     gap: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -22,6 +22,10 @@ main{
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: rgb(232, 196, 243);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
 footer{
@@ -29,8 +33,6 @@ footer{
     grid-row: 3/4;
     background-color: lightpink;
     text-align: center;
-}
-footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -44,26 +46,44 @@ footer ul{
     font-size: 1.5em;
 }
 textarea{
+    display: flex;
     width: 85%;
     height: 85%;
+    justify-content: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-left: 7%;
 }
 .save{
-    position: relative;
-    top: 5%;
-    left: 5%;
-}
-.theme{
-    position: relative;
-    top: 5%;
-    right: 5%;
+    border-radius: 8px;
+    background-color: seagreen;
+    border: 2px solid seagreen;
+    font-size: 1em;
+    color: white;
+    margin: 2%;
 }
 .cancel{
-    position: relative;
-    bottom: 5%;
-    left: 40%;
+    border-radius: 8px;
+    background-color: red;
+    border: 2px solid red;
+    font-size: 1em;
+    color: white;
+}
+.theme{
+    border-radius: 8px;
+    background-color: grey;
+    border: 2px solid gray;
+    font-size: 1em;
+    color: white;
+    margin-left: 30%;
 }
 .new{
-    position: relative;
-    bottom: 5%;
-    left: 40%;
+    border-radius: 8px;
+    background-color: seagreen;
+    border: 2px solid seagreen;
+    font-size: 1em;
+    color: white;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
